@@ -1,0 +1,50 @@
+{
+  "baggage_policy.txt": {
+    "doc_hash": "e7edf1867568f42c",
+    "policy_area": "baggage",
+    "version": "v1",
+    "status": "active",
+    "effective_date": "2026-01-01",
+    "last_indexed_at": "2026-06-24T23:55:15+00:00"
+  },
+  "cancellation_policy.txt": {
+    "doc_hash": "93ad3bdad6d8f579",
+    "policy_area": "cancellation",
+    "version": "v1",
+    "status": "active",
+    "effective_date": "2026-01-01",
+    "last_indexed_at": "2026-06-24T23:55:15+00:00"
+  },
+  "check_in_policy.txt": {
+    "doc_hash": "c1ab297df6482cca",
+    "policy_area": "check_in",
+    "version": "v1",
+    "status": "active",
+    "effective_date": "2026-01-01",
+    "last_indexed_at": "2026-06-24T23:55:15+00:00"
+  },
+  "delay_compensation_policy.txt": {
+    "doc_hash": "9851a9db7909c1ed",
+    "policy_area": "delay",
+    "version": "v1",
+    "status": "active",
+    "effective_date": "2026-01-01",
+    "last_indexed_at": "2026-06-24T23:55:15+00:00"
+  },
+  "flight_change_policy.txt": {
+    "doc_hash": "4f9875a2604ea72b",
+    "policy_area": "flight_change",
+    "version": "v1",
+    "status": "active",
+    "effective_date": "2026-01-01",
+    "last_indexed_at": "2026-06-24T23:55:15+00:00"
+  },
+  "refund_policy.txt": {
+    "doc_hash": "a8d78f26bad19eab",
+    "policy_area": "refund",
+    "version": "v1",
+    "status": "active",
+    "effective_date": "2026-01-01",
+    "last_indexed_at": "2026-06-24T23:55:15+00:00"
+  }
+}

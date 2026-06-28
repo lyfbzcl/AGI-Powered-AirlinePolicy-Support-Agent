@@ -1,0 +1,59 @@
+{
+  "project_name": "Airline Policy AI Support Agent",
+  "project_type": "Course final prototype / compound AI system",
+  "goal": "Reduce airline policy lookup workload while keeping risky or unsupported policy decisions under human control.",
+  "business_problem": "Airline customer support agents spend repeated manual effort searching fragmented policy documents, creating slow responses, inconsistent answers, and avoidable operating cost.",
+  "domain": "Airline customer support",
+  "final_capabilities": {
+    "retrieval_augmented_generation": true,
+    "faiss_vector_index": true,
+    "openai_compatible_embedding_api": true,
+    "openai_compatible_chat_api": true,
+    "missing_information_detection": true,
+    "answer_verification": true,
+    "human_handoff": true,
+    "multi_turn_context": true,
+    "semantic_cache": true,
+    "streamlit_frontend": true,
+    "human_service_console": true,
+    "sqlite_persistence": true
+  },
+  "offline_pipeline": [
+    "load static airline policy text files",
+    "clean and normalize text",
+    "split text into overlapping chunks",
+    "infer metadata and document hashes",
+    "embed chunks with an OpenAI-compatible API",
+    "store vectors in a local FAISS index",
+    "save chunk metadata and policy manifest"
+  ],
+  "online_pipeline": [
+    "resolve standalone or follow-up user question",
+    "embed effective question",
+    "retrieve top-k policy chunks from FAISS",
+    "detect missing policy-critical fields",
+    "detect unsupported policy area or lightweight source conflict",
+    "generate answer from retrieved context only",
+    "verify answer support against retrieved text",
+    "return answer, clarification, or human handoff",
+    "persist conversation turns and source metadata"
+  ],
+  "sample_policy_files": [
+    "baggage_policy.txt",
+    "cancellation_policy.txt",
+    "check_in_policy.txt",
+    "delay_compensation_policy.txt",
+    "flight_change_policy.txt",
+    "refund_policy.txt"
+  ],
+  "evaluation": {
+    "gold_cases": 6,
+    "latest_result": "6/6 passed",
+    "additional_checks": [
+      "contextual follow-up inherits policy area",
+      "standalone ambiguous fragment asks for user goal",
+      "unsupported onboard-service question transfers to customer service"
+    ]
+  },
+  "reproduction_entrypoint": "README.md"
+}

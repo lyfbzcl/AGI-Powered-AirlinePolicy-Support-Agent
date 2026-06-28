@@ -1,0 +1,39 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+*.log
+
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+
+# Local runtime state
+data/conversations.sqlite3
+data/semantic_cache.sqlite3
+*.sqlite3
+
+# Local browser/test artifacts
+.playwright-cli/
+
+# Python environments
+.venv/
+venv/
+env/
+
+# JavaScript dependencies
+node_modules/
+package.json
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+outputs/
+
+# Presentation source materials are not required to reproduce the prototype
+presentation1/
+
+# IDE/editor
+.vscode/
+.idea/

@@ -1,0 +1,38 @@
+[
+  {
+    "question": "Can I get a refund if I cancel before departure?",
+    "expected_policy_area": "refund",
+    "expected_action": "clarify",
+    "expected_missing_fields": ["fare_type", "cancellation_reason", "route"]
+  },
+  {
+    "question": "What happens if my checked bag is overweight?",
+    "expected_policy_area": "baggage",
+    "expected_action": "answer",
+    "expected_missing_fields": []
+  },
+  {
+    "question": "Can I change my basic economy ticket to a later flight tomorrow?",
+    "expected_policy_area": "flight_change",
+    "expected_action": "clarify",
+    "expected_missing_fields": ["change_time"]
+  },
+  {
+    "question": "Do I qualify for compensation after a delay?",
+    "expected_policy_area": "delay",
+    "expected_action": "clarify",
+    "expected_missing_fields": ["delay_length", "route", "delay_reason", "final_arrival_delay"]
+  },
+  {
+    "question": "What documents do I need for international check-in?",
+    "expected_policy_area": "check_in",
+    "expected_action": "answer",
+    "expected_missing_fields": []
+  },
+  {
+    "question": "What is the general refund policy?",
+    "expected_policy_area": "refund",
+    "expected_action": "answer",
+    "expected_missing_fields": []
+  }
+]
