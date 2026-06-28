@@ -176,6 +176,12 @@ Both apps use the same local SQLite database at `data/conversations.sqlite3`. Th
 
 ## Demo Scenarios
 
+Final 3-minute road-show video:
+
+```text
+https://youtu.be/JdaIBONHSq8
+```
+
 The final road-show video demonstrates these cases:
 
 1. Grounded answer: `What happens if my checked bag is overweight?`
