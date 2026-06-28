@@ -30,6 +30,7 @@ dist/
 build/
 *.egg-info/
 outputs/
+tmp/
 
 # Presentation source materials are not required to reproduce the prototype
 presentation1/
